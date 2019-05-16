@@ -14,7 +14,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    h
   </dependencies>
   <build>
     <finalName>sss_p001</finalName>
