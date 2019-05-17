@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Login_controller</servlet-name>
+  	<display-name>Login_controller</display-name>
+  	<description></description>
+  	<servlet-class>Servlets.Login_controller</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CSRF_provider</servlet-name>
+  	<display-name>CSRF_provider</display-name>
+  	<description></description>
+  	<servlet-class>Servlets.CSRF_provider</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Home_controller</servlet-name>
+  	<display-name>Home_controller</display-name>
+  	<description></description>
+  	<servlet-class>Servlets.Home_controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login_controller</servlet-name>
+  	<url-pattern>/Login_controller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CSRF_provider</servlet-name>
+  	<url-pattern>/CSRF_provider</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Home_controller</servlet-name>
+  	<url-pattern>/Home_controller</url-pattern>
+  </servlet-mapping>
 </web-app>
