@@ -43,12 +43,12 @@ public class Login_controller extends HttpServlet {
 	      response.addCookie(Lambdas.COOKIE_WITH_SESSION_ID.apply(session));
 
 	      session.removeAttribute("invalidCredentials");
-	      response.sendRedirect("./Home.jsp");
+	      response.sendRedirect("./Home_page.jsp");
 	    }
 	    else
 	    {
 	      session.setAttribute("invalidCredentials", "Not_ok");
-	      response.sendRedirect("./Login.jsp");
+	      response.sendRedirect("./Login_page.jsp");
 	    }
 	}
 
