@@ -8,29 +8,29 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * 
+ * Servlet implementation class Home_controller
+ * @author Keshani.A. Bogahawatte
+ * IT17139786
  */
+
 public class Home_controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    HttpSession session = request.getSession(false);
 	    String hiddenToken = request.getParameter("myHiddenField");
 
 	    String csrfToken = Login_controller.csrfTokenStore.get(session.getId());
 
-	    if (csrfToken.equals(hiddenToken))
-	    {
-	      response.getWriter().append("Success!");
+	    if (csrfToken.equals(hiddenToken)) {
+	    	
+	      response.getWriter().append("Success!");	      
 	    }
-	    else
-	    {
+	    else {
 	      response.getWriter().append("ERROR!");
 	    }
 	  }
-	}
+	
+}
 
 

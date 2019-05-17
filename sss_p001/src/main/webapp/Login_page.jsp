@@ -11,9 +11,9 @@
 <form method="post" action="Login_controller">
 		<label>Username : </label><input type="text" name="username" /> 
 		<label>Password : </label><input type="password" name="password"/>
-		<c:if test="${not empty sessionScope.invalidCredentials}">
+		<!--  <c:if test="${not empty sessionScope.invalidCredentials}">
 			<div id="message" style="color:red;">Incorrect username & password!</div>
-		</c:if>
+		</c:if> -->
 		<input type="submit" value="Login">
 </form>
 </center>
