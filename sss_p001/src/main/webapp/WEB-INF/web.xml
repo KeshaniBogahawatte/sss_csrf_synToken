@@ -34,4 +34,8 @@
   	<servlet-name>Home_controller</servlet-name>
   	<url-pattern>/Home_controller</url-pattern>
   </servlet-mapping>
+  
+  <welcome-file-list>
+  	<welcome-file>Login_page.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>
