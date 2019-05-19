@@ -10,8 +10,8 @@
 <body bgcolor=#cecee8>
 
     <center>
-    <br>
-        <a href="./Legitimate_page.html" target="Starfall">Open legitimate page</a>&nbsp;<br>
+    <br><br>
+        <a href="./Legitimate_page.html" target="Starfall">Open legitimate page</a>&nbsp;<br><br>
         <a href="./Intruder_page.html" target="Starfall">Click here for claim your free gift</a>
     </center>
 
