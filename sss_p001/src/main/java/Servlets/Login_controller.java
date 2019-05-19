@@ -29,7 +29,7 @@ public class Login_controller extends HttpServlet {
 		
 		String username = request.getParameter("username");
 	    String password = request.getParameter("password");
-	    HttpSession session = request.getSession(true); // create a new session if not exists
+	    HttpSession session = request.getSession(true); // creates a new session if a current one does not exist
 
 	    if (Database.isValidUser(username, password)) {
 	    	
@@ -39,11 +39,11 @@ public class Login_controller extends HttpServlet {
 	      response.addCookie(Lambdas.COOKIE_WITH_SESSION_ID.apply(session));
 
 	      session.removeAttribute("invalidCredentials");
-	      response.sendRedirect("./Home_page.jsp");
+	      response.sendRedirect("./Home_page.jsp"); // if the entered credentials were valid forward to the home page
 	    }
 	    else {
 	      session.setAttribute("invalidCredentials", "Not_ok");
-	      response.sendRedirect("./Login_page.jsp");
+	      response.sendRedirect("./Login_page.jsp"); // if the entered credentials were invalid return to the login page
 	    }
 	}
 
@@ -54,7 +54,7 @@ public class Login_controller extends HttpServlet {
 
 	  private String getRandomString(){
 		  
-	    UUID randomUuid = UUID.randomUUID();
+	    UUID randomUuid = UUID.randomUUID(); //creates a random string
 	    return randomUuid.toString();
 	  }
 	
