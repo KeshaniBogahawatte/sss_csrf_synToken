@@ -7,7 +7,7 @@
 <title>The best Online Shopping Website in Sri Lanka</title>
 </head>
 
-<body bgcolor=#8d8de0>
+<body bgcolor=#cecee8>
 
     <center>
     <br>
