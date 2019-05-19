@@ -24,10 +24,10 @@ public class Home_controller extends HttpServlet {
 
 	    if (csrfToken.equals(hiddenToken)) {
 	    	
-	      response.getWriter().append("Success!");	      
+	      response.getWriter().append("Success!");	// displays a success message if the csrf token and the hidden token is equal	            
 	    }
 	    else {
-	      response.getWriter().append("ERROR!");
+	      response.getWriter().append("ERROR!"); // displays an error message if the csrf token and the hidden token is not equal	
 	    }
 	  }
 	
